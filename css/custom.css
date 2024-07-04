@@ -1,0 +1,372 @@
+/*/posicionar imagen de fondo/*/
+@font-face {
+	font-family: Raleway-Regular;
+	src: url(../fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+	font-family: Raleway-Bold;
+	src: url(../fonts/Raleway-Bold.ttf);
+}
+
+@font-face {
+	font-family: Raleway-Italic;
+	src: url(../fonts/Raleway-Italic.ttf);
+}
+
+@font-face {
+	font-family: Raleway-ExtraBold;
+	src: url(../fonts/Raleway-ExtraBold.ttf);
+}
+
+/*Bloque de  inicializan de parametros*/
+  html {
+    font-size: 14px;
+  }
+  :root {
+    --color-primary: 44, 195, 198;
+    --color-secondary: 233, 216, 75;
+  }
+
+  .pointer-C {
+    cursor: pointer;
+  }
+/*Fin Bloque*/
+
+/*Bloque de colores*/
+  .bg-Cprimary {
+    background-color: rgba(var(--color-primary),1);   
+  }
+  .bg-Csecondary {
+    background-color: rgba(var(--color-secondary),1);   
+  }
+
+  .text-Cprimary {
+    color: rgba(var(--color-primary),1); 
+  }
+  .text-Csecondary {
+    color: rgba(var(--color-secondary),1); 
+  }
+
+
+  .lhnormal-1 {
+    line-height: 1;
+  }
+/*Fin Bloque*/
+
+/*Bloque  clases personalizadas que son similares a existentes en boostrap*/
+  .zindex-C10 {
+    z-index: 10;
+  }
+
+  .full-Cimage {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .img-Cfluid {
+    width: 100%;
+    height: auto;
+  }
+
+  .rounded-C4 {
+    border-radius: .4rem!important;
+  }
+
+  .h0-C {
+    font-size: 3rem;
+  }
+  .h7-C {
+    font-size: 0.9rem;
+  }
+  .h8-C {
+    font-size: 0.8rem;
+  }
+  .h9-C {
+    font-size: 0.7rem;
+  }
+
+ 
+  .h-5 {
+    height: 5%;
+  }
+
+  .h-10 {
+    height: 10%;
+  }
+
+  .h-15 {
+    height: 15%;
+  }
+
+  .h-20 {
+    height: 20%;
+  }
+
+  .h-30 {
+    height: 30%;
+  }
+
+  .h-35 {
+    height: 35%;
+  }
+
+  .h-40 {
+    height: 40%;
+  }
+
+  .h-45 {
+    height: 45%;
+  }
+
+  .h-55 {
+    height: 55%;
+  }
+
+  .h-60 {
+    height: 60%;
+  }
+
+  .h-65 {
+    height: 65%;
+  }
+
+  .h-70 {
+    height: 70%;
+  }
+
+  .h-80 {
+    height: 80%;
+  }
+
+  .h-85 {
+    height: 85%;
+  }
+
+  .h-90 {
+    height: 90%;
+  }
+
+  .h-95 {
+    height: 95%;
+  }
+/*Fin Bloque */
+
+/*Bloque para crear tarjetas dinamicas acopladas a las columnas*/
+  .card-CResponsive {
+    position: relative;
+    width: 100%; /* o valor necesario*/
+  }
+
+  .card-CResponsive>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  .pt-C5 {
+    padding-top: 5%;
+  }
+
+  .pt-C30 {
+    padding-top: 30%;
+  }
+
+  .pt-C40 {
+    padding-top: 40%;
+  }
+  .pt-C50 {
+    padding-top: 40%;
+  }
+  .pt-C60 {
+    padding-top: 60%;
+  }
+
+  .pt-C100 {
+    padding-top: 100%;
+  }
+  .pt-C125 {
+    padding-top: 125%;
+  }
+  .pt-C150 {
+    padding-top: 150%;
+  }
+  .pt-C175 {
+    padding-top: 175%;
+  }
+/*Fin Bloque */
+
+/*Bloque que sobreescribe las clases de carousel*/
+  .carousel-indicators{
+    z-index: 1;
+  }
+
+  .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+
+  .carousel-indicators li.active {
+    width: 30px;
+    border-top-left-radius: 25% 75%;
+    border-top-right-radius: 25% 75%;
+    border-bottom-left-radius: 25% 75%;
+    border-bottom-right-radius: 25% 75%;
+  }
+
+  span.rounded-circle:hover {
+    background: rgba(var(--color-primary),0.16);
+  }
+
+/*Fin Bloque */
+
+/* Bloque de mediaquerys*/
+
+@media (max-width: 992px){
+  nav.navbar{
+    background: black;
+  }
+}
+
+/* Fin Bloque*/
+
+
+
+
+
+/* Responsive layout grid */
+
+.border-destinations {
+	border-radius: 9px;
+}
+
+.module {
+  	background: url(../image/assets/img_about.png);
+  	background-size: cover;
+  	width: 95%;
+  	height: 4rem;
+  	position: relative;
+  	float: center;
+	border-radius: 9px;
+}
+
+.pagination {
+	display: inline-block;
+}
+
+.pagination a {
+	color: black;
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
+	transition: background-color .3s;
+	border-radius: 90px;
+	border: 1px solid #ddd;
+	margin: 0 4px;
+	font-size: 18px;
+	margin-bottom: 5%;
+}
+
+.pagination a.active {
+	background-color: #25D683;
+	color: white;
+	border: 1px solid #25D683;
+}
+
+.pagination a:hover:not(.active) {
+	background-color: #ddd;
+}
+
+.icon-pag {
+	height: 25%;
+    width: 1rem;
+}
+
+.footer-text {
+	font-size: 12px;
+	color: #BFBFBF;
+}
+
+.social_icon {
+    width: 1em;
+    height: 1em;
+}
+
+.my-nav{
+position: absolute;
+z-index: 10;
+width: 100%;
+}
+
+.carousel-item {
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.m-t-n-card {
+  margin-top: -3rem !important;
+}
+
+.m-t-n-card-service {
+  margin-top: -8rem !important;
+}
+
+.card-heightCfeatured {
+  height: 30rem; 
+}
+
+.border-none {
+  border: none;
+}
+
+.opacity-image-div {
+  background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(../image/banner_anime.png);
+}
+
+/*estilos valoración estrellas*/
+:root {
+    --color-inactivo: #5f5050;
+    --color-hover: #ffa400;
+}
+.valoracion {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.valoracion button {
+    background-color: initial;
+    border: 0;
+    color: var(--color-inactivo);
+    transition: 1s all;
+}
+.valoracion button:hover {
+    cursor: pointer;
+    color: var(--color-hover);
+    transform: rotate(360deg);
+}
+button:nth-child(1):hover ~ button {
+    color: var(--color-hover);
+    transform: rotate(360deg);
+}
+button:nth-child(2):hover ~ button {
+    color: var(--color-hover);
+    transform: rotate(360deg);
+}
+button:nth-child(3):hover ~ button {
+    color: var(--color-hover);
+    transform: rotate(360deg);
+}
+button:nth-child(4):hover ~ button {
+    color: var(--color-hover);
+    transform: rotate(360deg);
+}
+button:nth-child(5):hover ~ button {
+    color: var(--color-hover);
+    transform: rotate(360deg);
+}
